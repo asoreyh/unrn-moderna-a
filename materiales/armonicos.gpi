@@ -1,0 +1,26 @@
+# suma de armónicos
+
+# general
+set xrange [0:6*pi]
+set grid
+unset key
+
+# general wave functions
+yp(a,i,x,t)=a*cos(i*x/2.-t)
+ym(a,i,x,t)=-a*cos(-i*x/2.-t)
+
+# parameters
+timelenght=20.
+s=10.
+mina=1;
+maxa=5;
+set yrange [-maxa*1.7:maxa*1.7]
+
+do for [t = 0:timelenght*s] {
+	plot 0 w l lw 2 lc 0, \
+	for [i=mina:maxa] yp(1, i, x, t/s) w l lw 1 lc 1, \
+	for [i=mina:maxa] ym(1, i, x, t/s) w l lw 1 lc 3, \
+	sum [i=mina:maxa] (yp(1, i, x, t/s) + ym(1, i, x, t/s)) w l lw 6 lc 7
+ 	pause 0.1
+}
+exit
