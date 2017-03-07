@@ -1,6 +1,7 @@
 <img alt="" style="border-width:0" src="https://www.dropbox.com/s/4no2nlcmj78n742/banner-moderna.png?raw=1">
 # Física Moderna A - Primer semestre de 2017
 **Asignatura del quinto semestre de la carrera de Profesorado en Física [Universidad Nacional de Río Negro](http://www.unrn.edu.ar/ "UNRN")**
+
 Más información en **[https://www.facebook.com/fisicareconocida/](https://www.facebook.com/fisicareconocida/ "Física ReConocida")**
 
 # Contenidos mínimos
@@ -13,7 +14,7 @@ Los contenidos mínimos establecidos por el Plan de Estudios de la carrera para 
 **Del Martes 6 de Marzo al Jueves 27 de Abril (primer parcial)**
 
 ### Unidad 1: La crisis de principios del Siglo XX
-**Cuatro encuentros desde el Martes 07 de Marzo al Jueves 16 de Marzo**
+**4 encuentros desde el Martes 07 de Marzo al Jueves 16 de Marzo**
 
 Introducción. Nuestra comprensión, la interacción con el mundo y el gap sensorial. El cuerpo negro. Ejemplos y propiedades. Emisividad, reflectividad, absorcividad. La catástrofe del ultravioleta y la hipótesis de Planck. El campo electromagnético. El efecto fotoeléctrico y los fotones. Aportes de Albert Einstein. El efecto 
 
