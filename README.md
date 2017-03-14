@@ -4,6 +4,8 @@
 
 Más información en **[https://www.facebook.com/fisicareconocida/](https://www.facebook.com/fisicareconocida/ "Física ReConocida")**
 
+Las clases fueron realizados en [LibreOffice Impress](https://es.libreoffice.org/descubre/impress/), la herramienta de presentaciones de [LibreOffice](https://es.libreoffice.org/). Para poder visualizar correctamente las clases, por favor descarguelo siguiendo el este enlace: **[Descargue LibreOffice](https://es.libreoffice.org/descarga/libreoffice-estable/)**
+
 # Contenidos mínimos
 
 Los contenidos mínimos establecidos por el Plan de Estudios de la carrera para Física Moderna A son los siguientes: Radiación del cuerpo negro. Conflictos con la física clásica. La hipótesis de Planck. El efecto fotoeléctrico y los fotones. Dualidad onda-corpúsculo. Difracción de ondas y materia. Los espectros atómicos y la estructura del átomo. La función de onda. Principio de incerteza de Heisenberg. Mecánica cuántica del átomo de hidrógeno. Principio de exclusión. Átomos complejos. 
