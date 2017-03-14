@@ -1,5 +1,7 @@
 <img alt="" style="border-width:0" src="https://www.dropbox.com/s/4no2nlcmj78n742/banner-moderna.png?raw=1">
+
 # Física Moderna A - Primer semestre de 2017
+
 **Asignatura del quinto semestre de la carrera de Profesorado en Física [Universidad Nacional de Río Negro](http://www.unrn.edu.ar/ "UNRN")**
 
 Más información en **[https://www.facebook.com/fisicareconocida/](https://www.facebook.com/fisicareconocida/ "Física ReConocida")**
