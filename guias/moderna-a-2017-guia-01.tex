@@ -1,0 +1,173 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[spanish]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[pdftex,colorlinks=true, pdfstartview=FitH, linkcolor=blue,
+citecolor=blue, urlcolor=blue, pdfpagemode=UseOutlines, pdfauthor={H. Asorey},
+pdftitle={Física Moderna A - Asorey - 2017 }]{hyperref}
+\usepackage[adobe-utopia]{mathdesign}
+
+\hoffset -1.23cm
+\textwidth 16.5cm
+\voffset -2.0cm
+\textheight 26.0cm
+
+%----------------------------------------------------------------
+\begin{document}
+\title{
+{\normalsize{Universidad Nacional de Río Negro - Profesorado de Física}}\\
+Física Moderna A \\ La crisis de principios del Siglo XX\\}
+\author{Asorey}
+\date{2017}
+\maketitle
+
+\begin{enumerate}
+\setcounter{enumi}{0}      %% Offset en numero de problema
+
+\item {\bf{Ondas Electromagnéticas}}:\\
+	A partir de la relación $c = \lambda f$, donde $f$ es la frecuencia,
+		$\lambda$ es a longitud de onda y $c=299792458$\,m\,s$^{-1} \simeq
+		3\times 10^8$\,m\,s$^{-1}$ es la velocidad de la luz, complete las columnas 1 o 2 de la siguiente tabla según corresponda:
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|c|c|c|c|}
+				\hline
+				1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+				\hline
+				$\lambda$ & $f$ (GHz) & $E_\lambda$ (J) & $E_\lambda$ (eV) & B($\lambda, 290$\,K$)$ & B($\lambda, 5700$\,K$)$ & B($\lambda, 15000$\,K$)$ & R($\lambda,15000)$\\
+				\hline
+				78\,m & & & & & & & \\
+				\hline
+				1\,m & & & & & & & \\
+				\hline
+				 & 0.1019 & & & & & & \\
+				\hline
+				730\,nm & & & & & & & \\
+				\hline
+				550\,nm & & & & & & & \\
+				\hline
+				420\,nm & & & & & & & \\
+				\hline
+				& $7.3 \times 10^{-4}$ & & & & & & \\
+				\hline
+				250\,nm & & & & & & & \\
+				\hline
+				& $1.58 \times 10^{3}$ & & & & & & \\
+				\hline
+				& $3.29 \times 10^{3}$ & & & & & & \\
+				\hline
+				10\,nm & & & & & & $2.625 \times 10^{-18}$ & \\
+				\hline
+			\end{tabular}
+		\end{center}
+		
+\item {\bf{Energía de una onda electromagnética}}:\\
+	Complete las columnas 3 y 4 de la tabla anterior, en joules y en
+		electrón-voltios respectivamente. Para ello, utilice la relación para
+		la energía de un fotón, $E = h f = h c / \lambda$, donde $h$ es la
+		constante de Planck, $h=6.626\times 10^{-34}$\,J\,s $=4.136\times
+		10^{-15}$\,eV\,s.
+
+\item {\bf{Radiación de Cuerpo Negro}}:\\
+	A partir de la expresión de Planck para la radiancia espectral de un cuerpo
+		negro a temperatura $T$, $$ B(\lambda, T) = \frac{2 h c^2}{\lambda^5
+		\left (e^{\frac{hc}{\lambda k T}}-1 \right )},$$ complete las columnas
+		5, 6 y 7 de la tabla del ejercicio 1. Observe que las unidades de la
+		radiancia espectral son las de potencia radiada (W) por unidad de
+		ángulo sólido (sr) por unidad de área (m$^2$) por unidad de longitud de
+		onda (m). Ayuda 1: Puede utilizar Excel para realizar estos cálculos.
+		Ayuda 2: Como ejemplo, $B(10\mathrm{\ nm}, 15000\mathrm{\ K}) = 2.625
+		\times 10^{-18}$\,W\,sr$^{-1}$\,m$^{-3}$.
+
+\item {\bf{Catástrofe ultravioleta}}:\\
+	Tal como hemos visto en clase, la llamada ``catástrofe ultravioleta'' se
+		dio al comparar la predicción ``clásica'' para la radiancia espectral
+		de un cuerpo negro a temperatura $T$, dado por la llamada ley de
+		Rayleigh-Jeans, $$ R(\lambda,T) = \frac{2 c k T}{\lambda^4},$$ con los
+		datos experimentales. Complete la columna 8 de la tabla del ejercicio 1
+		con la mencionada ley para un cuerpo negro de $T=15000$\,K y compárela
+		con la correspondiente radiancia espectral obtenida con la expresión de
+		Planck para un cuerpo negro a la misma temperatura (columna 7).
+		Verifique que las diferencias significativas se dan para longitudes de
+		onda menores al rango visible, $\lambda \lesssim 430$\,nm (catástrofe
+		del ultravioleta).
+
+\item {\bf{Lamparita}}:\\
+	Suponga que una lámpara de $100$\,W emite toda la potencia consumida en
+	forma de luz monocromática de $530$\,nm. Calcule la frecuencia, la energía
+	y la cantidad de movimiento ($p=E/c$) de estos fotones, y luego calcule el
+	número de fotones emitidos por la lámpara cada segundo. Justifique. 
+
+\item {\bf{Ikaros}}:\\
+	Investigue el funcionamiento de la sonda espacial IKAROS y discuta la forma
+	de propulsión en el marco de la teoría cuántica para los fotones.
+	Interprete y responda: ¿qué es la presión de radiación?
+
+\item {\bf{Efecto fotoeléctrico}}:\\
+	La longitud de onda umbral para la emisión de fotoelectrones (electrones
+	emitidos por efecto fotoeléctrico) en el cesio (Cs) es $579$\,nm. Calcule
+	la función trabajo $\phi$ del Cesio en eV, y luego diga cuál es la energía
+	cinética (en eV) y la velocidad máxima (en m/s) de los electrones emitidos
+	cuando se ilumina una plancha de cesio con radiación electromagnética de
+	$\lambda = 720\mathrm{\ nm}, 579\mathrm{\ nm}, 480\mathrm{\ nm,\ y\ }
+	430$\,nm. Para ello, recuerde que la energía cinética de los electrones
+	emitidos es $E_K = h f - \phi$ y que los mismos no son relativistas.  
+
+\item {\bf{Fotómetro}}:\\
+	¿Cuál debería ser la función trabajo de un material si queremos emplearlo
+	para medir la intensidad de una haz de luz visible, $400$\,nm$\lesssim
+	\lambda \lesssim 700$\,nm?
+
+\item {\bf{Emisión fotoeléctrica}}:\\
+	La longitud de onda umbral de los fotoelectrones en tungsteno (W) es de
+	$272$\,nm. Calcula la energía cinética máxima de los electrones emitidos al
+	iluminar al metal con radiación UV de $f=1.45\times 10^{15}$\,Hz. Exprese
+	la respuesta en electrón-volts.
+
+\item {\bf{Efecto Compton}}:\\
+	El efecto Compton corresponde a la dispersión inelástica de fotones con
+	partículas cargadas libres. Según esto, el fotón incidente de longitud de
+	onda $\lambda$ es dispersado a un ángulo $\theta$ respecto a su dirección
+	de propagación original y emerge con una longitud de onda $\lambda' >
+	\lambda$, según la siguiente relación: $$ \lambda' - \lambda =
+	\left(\frac{h}{mc}\right) \left ( 1 - \cos(\theta) \right ).$$ Al primer
+	factor se lo conoce como longitud de onda Compton de la partícula en
+	cuestión. Verifique que esta expresión tiene unidades de longitud y luego
+	calcule la longitud de onda Compton para el electrón, $\lambda_e = h / (m_e
+	c)$, para el muón, $\lambda_\mu = h / (m_\mu c)$ y para el protón
+	$\lambda_p = h / (m_p c)$. Exprese el resultado en picómetros (1\,pm $=
+	10^{-12}$\,m).
+
+\item {\bf{Longitud de onda Compton}}:\\
+	A partir de la expresión para el cambio de longitud de onda del fotón,
+	obtenga la siguiente relación para las energías del fotón incidente y
+	emitido: $$\frac{1}{E_{\lambda'}} - \frac{1}{E_\lambda} = \frac{1}{m c^2}
+	\left(1 - \cos(\theta) \right).$$ La diferencia de energía es transferida a
+	la partícula de masa $m$, que adquiere una energía cinética $E_k =
+	E_\lambda - E_{\lambda'}$. 
+
+\item {\bf{Retrodispersión Compton}}:
+	A partir de la expresión para el cambio de longitud de onda, $$ \Delta
+	\lambda \equiv \lambda' - \lambda = \lambda_e \left ( 1 - \cos(\theta)
+	\right ),$$ calcule el $\Delta \lambda$ para un electrón cuando $\theta =
+	0, \pi/4, \pi/2, 3\pi/4, \pi$. Luego, calcule en cada caso la energía del
+	fotón dispersado y la energía cinética transferida al electrón si el fotón
+	incidente es un rayo X con $E_\lambda = 1$\,keV. 
+
+\item {\bf{Función angular}}:\\
+	Utilizando Libreoffice calc (o Excel), realice un gráfico de la función
+	$\Delta \lambda = \lambda_e (1 - \cos(\theta))$ como función de $\theta$
+	para un electrón.
+
+\item {\bf{Dispersión Compton }}:\\
+	Un haz de rayos X con energía $E=25$\,keV es dispersado por Compton. ¿Cuál
+	es la máxima longitud de onda $\lambda'$ que podrá encontrar en los rayos X
+	dispersados? ¿En qué ángulo? ¿Espera observar rayos X de $25$\,keV entre
+	los dispersados? En caso afirmativo, ¿en qué ángulo? ¿Cuáles son las
+	energías mínimas y máximas que espera observar entre los electrones
+	dispersados? 
+%%% 14 ejercicios
+\end{enumerate}
+\end{document}
+%%%%
