@@ -3,8 +3,8 @@
 #general 
 reset
 set grid
-set samples 200
-set isosamples 100
+set samples 50
+set isosamples 50
 set xlabel "X"
 set ylabel "Y"
 
@@ -12,12 +12,12 @@ set xrange [0:2*pi]
 set yrange [0:2*pi]
 set zrange [-2:2]
 set cbrange [-2:2]
-s=20. # time steps
+s=5. # time steps
 timelenght = 20
 
 # two waves
-kx1=3.
-ky1=5.
+kx1=5.
+ky1=0.
 w1=1.
 z1(A1,x,y,t)=A1*cos(kx1*x+ky1*y-w1*t)
 p1 = 1.
@@ -26,7 +26,7 @@ kx2=3.
 ky2=5.
 w2=1.
 z2(A2,x,y,t)=A2*cos(-kx2*x-ky2*y-w1*t)
-p2 = 0.1
+p2 = 0.
 # plot
 
 do for [t = 0:timelenght*s] {
