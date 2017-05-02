@@ -1,0 +1,41 @@
+# paquetes de onda
+# general
+reset
+set grid
+set samples 1000
+# función de onda general, sólo espacial
+psi(a,p,x)=a*cos(p*x)
+prb(a,p,x)=(psi(a,p,x))**2
+
+# parameters
+mina=1;
+maxa=52;
+step=1
+set xrange [-2:2]
+ti(x) = sprintf("%02d", x)
+fi(x) = sprintf("paq%02d.png", x)
+
+do for [j = mina:maxa:step] {
+	set yrange [-j*1.1:j*1.1]
+	plot 0 w l lw 2 lc 0 t "", \
+	for [i=mina:j] (maxa/4.*psi(1., i, x)) w l lw 1 lc 1 t "", \
+	sum [i=mina:j] (psi(1., i, x)) w l lw 6 lc 7 t ti(j)
+ 	set out fi(j); set term png enhanced size 1024,768 crop font "Arial, 20"
+	plot 0 w l lw 2 lc 0 t "", sum [i=mina:j] (psi(1., i, x)) w l lw 6 lc 7 t ti(j)
+	set out
+	set term x11
+	pause 0.2
+}
+
+fi(x) = sprintf("prb%02d.png", x)
+do for [j = mina:maxa:step] {
+	set yrange [0:j*1.1]
+	plot 0 w l lw 2 lc 0 t "", \
+	sum [i=mina:j] (prb(1., i, x)) w l lw 6 lc 7 t ti(j)
+ 	set out fi(j); set term png enhanced size 1024,768 crop font "Arial, 20"
+	plot 0 w l lw 2 lc 0 t "", sum [i=mina:j] (prb(1., i, x)) w l lw 6 lc 7 t ti(j)
+	set out
+	set term x11
+	pause 0.2
+}
+exit

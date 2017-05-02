@@ -3,13 +3,13 @@
 #general 
 reset
 set grid
-set samples 50
-set isosamples 50
+set samples 250
+set isosamples 250
 set xlabel "X"
 set ylabel "Y"
 
 set xrange [0:2*pi]
-set yrange [0:2*pi]
+set yrange [-1.5:1.5]
 set zrange [-2:2]
 set cbrange [-2:2]
 s=30. # time steps
@@ -19,12 +19,13 @@ timelenght = 20
 kx1=5.
 ky1=4.
 w1=1.
-z1(A1,x,y,t)=A1*cos(kx1*x+ky1*y-w1*t)
-p1 = 1.
+z1(A1,x,t)=A1*cos(kx1*x-w1*t)
+	p1 = 1.
 
 
 do for [t = 0:timelenght*s] {
-	splot (p1 * z1(1,x,y,t/s) + p2 * z2(1,x,y,t/s) ) w pm3d lt palette
+	# splot (p1 * z1(1,x,y,t/s) + p2 * z2(1,x,y,t/s) ) w pm3d lt palette
+	plot (p1 * z1(1,x,t/s)) w l lt palette
 	pause 0.
 }
 
