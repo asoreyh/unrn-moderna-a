@@ -1,0 +1,42 @@
+# Onda estacionaria
+# general
+reset
+set grid
+set samples 1000
+
+ti(n)=sprintf("Función de onda, n=%d",n)
+tp(n)=sprintf("Probabilidad, n=%d",n)
+fi(n)=sprintf("box%04d.png",n)
+s=20. # time steps 
+timelenght=30
+
+m=1.
+l=3.
+ni=100
+nf=100
+
+E(n)=n**2/(8*m*l**2)
+psi(x,n) = sqrt(2/l)*sin(n*pi*x/l)
+phi(t,n) = sin(-E(n)*t)
+fo(n,x,t)=(x<0?0.:(x>l?0:psi(x,n)*phi(t,n)))
+pr(n,x,t)=fo(n,x,t)**2
+
+set xrange [-0.3:l+0.3]
+set yrange [-1.1:1.1]
+k=0
+
+# set term png enhanced size 1024,768 crop font "Arial, 26"
+
+do for [n=ni:nf] {
+	print n
+	do for [t = 0:timelenght*s] {
+		k=k+1
+#		set out fi(k)
+		plot \
+		0         w l lw 2 lc 0 lt 3 t "",\
+		fo(n,x,t) w l lw 4 lc 3 lt 1 t ti(n),\
+		pr(n,x,t) w l lw 4 lc 7 lt 2 t tp(n)
+#		set out
+	}
+}
+exit
