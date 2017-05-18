@@ -25,8 +25,77 @@ Física Moderna A \\ Aplicaciones a casos simples\\}
 \maketitle
 
 \begin{enumerate}
-\setcounter{enumi}{40}      %% Offset en numero de problema
-\item 
+	\setcounter{enumi}{40}      %% Offset en numero de problema
+	%% cálculo de expectación
+	%% alguno más de barrera con números
+	%%
+	\item {\bf{Pozos y barreras}}:\\
+		Utilizando lo visto en clase, obtenga las soluciones funcionales, es
+		decir, sin considerar las constantes de normalización, para las
+		funciones de onda correspondientes a las siguientes situaciones
+		físicas:
+		\begin{enumerate}
+			\item Partícula de energía $E$ en un pozo infinito de potencial de
+				ancho $L$.
+			\item Partícula de energía $E$ en un pozo finito de potencial de
+				ancho $L$ y altura $U_0>E$.
+			\item Partícula de energía $E$ en una barrera de potencial de ancho
+				$\delta x$ y altura $U_0>E$.
+		\end{enumerate}
+		En cada caso, realice un dibujo aproximado de la situación planteada y
+		de la forma (genérica) que espera para la función de onda obtenida.
+	
+	\item {\bf{Combinación de soluciones de un pozo}}:\\
+		Hemos comprobado que una combinación lineal de dos funciones de onda
+		de un sistema es también una función de onda válida para ese sistema.
+		Encuentre la constante de normalización $B$ para la función de onda
+		\[ \Psi = B \left ( \sin \frac{\pi x}{L} + \sin \frac{2 \pi x}{L}
+		\right ), \]
+		correspondiente a una combinación de los estados $n=1$ y $n=2$ de la
+		partícula en una caja de ancho $L$.
+
+	\item {\bf{Ionización del pozo de potencial}}:\\
+		Un electrón está confinado en un pozo de potencial cuadrado de
+		$L=1$\,nm de ancho y profundidad $U_0=10 E_\infty$, donde $E_\infty$
+		corresponde a la energía del nivel fundamental de un pozo de potencial
+		infinito del mismo ancho. Si el electrón está inicialmente en el nivel
+		fundamental ($n=1$) y absorbe un fotón. Calcule la longitud de onda
+		mínima del fotón para que el electrón pueda salir del pozo. Repita el
+		cálculo anterior para un pozo de ancho $L=2$\,nm y compare el resultado
+		con el anterior explicando las diferencias observadas.
+
+	\item {\bf{Probabilidad de transmisión}}:\\
+		Hemos visto que para una barrera de ancho $L$ y energía $U_0$, la
+		probabilidad de que una partícula de masa $m$ y energía $E<U_0$ que
+		impacta con la barrera está dada por:
+		\[T=T_0 e^{-2 \beta L},\]
+		donde
+		\[T_0= 16 \frac{E}{U_0} \left (1 - \frac{E}{U_0} \right )
+		\quad\mathrm{y}\quad 
+		\beta = \frac{\sqrt{2 m (U_0 - E)}}{\hbar}.\]
+		Calcule la probabilidad de que un electrón ($m_e=0.511$\,MeV/c$^2$) de
+		energía $E=8$\,eV atraviese una barrera de $U_0=10$\,eV si el ancho de
+		la misma es $L=1$\,nm y luego se reduce a $L=0.1$\,nm. Repita sus
+		cálculos si en vez de un electrón se utilizara un muón,
+		$m_\mu=105.7$\,MeV/c$^2$.
+
+	\item {\bf{Electrón versus protón}}:\\
+		Un electrón ($m_e=0.511$\,MeV$/c^2$) y un protón
+		($m_p=938.3$\,MeV$/c^2$) con la misma energía se acercan a
+		una barrera de potencial de altura $U_0>E$. ¿Tienen ellos la misma
+		probabilidad de atravesar la barrera? En caso negativo, ¿cuál tiene
+		mayor probabilidad de atravesarla?
+	  
+	\item {\bf{Oscilador armónico}}:\\
+		Muestre que el espaciamiento de los niveles de energía de un
+		oscilador armónico cuántico obedece el principio de correspondencia.
+		Para ello, obtenga la relación $\Delta E_n/E_n$ entre dos niveles de
+		energía adyacentes y verifique que sucede con esta relación al tomar el
+		límite $n \to \infty$
+	
+	\item {\bf{Nivel fundamental del oscilador armónico cuántico}}:\\
+		Encuentre (y dibuje) la función de probabilidad $P(x)=|\psi(x)|^2$ en
+		el estado para un oscilador armónico en el estado $n=0$.
 \end{enumerate}
 \end{document}
 %%%%
