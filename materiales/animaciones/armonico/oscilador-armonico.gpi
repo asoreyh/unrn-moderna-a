@@ -7,8 +7,13 @@ set ytics nomirror
 set y2tics
 set samples 1000
 set xlabel "x (m)"
-set ylabel "Probabilidad P(x)"
+#set ylabel "{/Symbol Y}(x)"
+set ylabel "|{/Symbol Y}(x)|^2"
 set y2label "Energía (ua)"
+set format x "%.0f"
+set format y "%.1f"
+set format y2 "%.1f"
+
 hbar=1.
 order=8
 
@@ -43,12 +48,20 @@ E(n)=(n+0.5)*hbar*w
 # Classical energy
 Eclas(x)=0.5*m*w**2*x**2
 
+#ti(x) = sprintf("psi%02d.png",x);
+ti(x) = sprintf("prob%02d.png",x);
 # plot
 set xrange [-4.2:4.2]
-set label 1 at -4.,0.8 "Función de probabilidad"
-set label 2 at 0.,4.2 center "Energía cuantizada"
-set label 3 at 2.3,3 "Energía clásica"
+set yrange [0:10]
+set y2range [0:9]
+#set label 1 at -4.,0.8 "Función de probabilidad"
+#set label 2 at 0.,4.2 center "Energía cuantizada"
+#set label 3 at 2.3,3 "Energía clásica"
+do for [n=0:order] {
 plot \
-	for [i=0:order] prob(x,i)+E(i), \
-	for [i=0:order] E(i) axis x1y2 lt 0 lc 9, \
+	for [i=0:n] prob(x,i)+E(i), \
+	for [i=0:n] E(i) axis x1y2 lt 0, \
 	Eclas(x) lt 1 lw 2
+	# set out ti(n); set term png enhanced medium font "Arial, 14"; replot; set out; set term x11
+	print ti(n); pause 0.1
+}
