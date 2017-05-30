@@ -1,0 +1,26 @@
+reset
+# load '~/.gnuplot'
+set grid
+set xlabel "X"
+set ylabel "Y"
+set zlabel "Z"
+set cblabel "|F|"
+unset key
+set size square
+fi(x,y)=sprintf("< python charges.py %d %.1f",x,y)
+pl(x,y)=sprintf("cap-%02d-%.1f.ps",x,y)
+
+set format x "%.1f"
+set format y "%.1f"
+set format z "%.1f"
+set format cb "%.1f"
+
+a=1.
+f=1.
+splot [-a:a][-a:a][-a:a] 'campo.dat' u 1:2:3:4:5:6:7 w vectors filled lc palette
+
+set term png enhanced medium font "Arial, 16"
+set output "campo.png"
+replot
+set output
+set term x11
