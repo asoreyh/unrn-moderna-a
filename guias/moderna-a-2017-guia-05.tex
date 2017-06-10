@@ -26,13 +26,7 @@ Física Moderna A \\ El átomo de hidrógeno\\}
 
 \begin{enumerate}
 	\setcounter{enumi}{47}      %% Offset en numero de problema
-	\item {\bf{Soluciones}}:\\
-		Muestre que $T_2^0(\theta) = \frac{\sqrt{10}}{4} (3 \cos^2 \theta - 1)$
-		es solución de la ecuación cenital, y escriba la solución a la ecuación
-		radial correspondiente (sáquela de la tabla de soluciones encontrando
-		el valor de $n$ correspondiente). Luego, verifique que $R_1^0(\theta) =
-		\frac{2}{a_0^{3/2}} e^{-r/a_0}$ es una solución de la ecuación radial.
-
+	
 	\item {\bf{Cuantización de $L$}}:\\
 		Compare el valor del momento angular para un electrón en el nivel
 		fundamental ($n=1$) y en el nivel ($n=2, l=1$) predichos por la teoría
@@ -40,8 +34,74 @@ Física Moderna A \\ El átomo de hidrógeno\\}
 		\hbar$. Luego, verifique para el caso $l=n-1$, a partir de que valor de
 		$n$ ambas predicciones difieren en menos de un $5\%$. 
 
-	\item 
+	\item {\bf{Cuantización de la energía}}:\\
+		Verifique los cálculos realizados en clase y muestre que la energía de
+		un estado con número cuántico principal $n$ es $E_n=E_1 / n^2$, donde
+		$$E_1= -\frac{1}{4\pi\epsilon_0} \frac{m e^4}{2\hbar^2},$$ y que
+		$E_1=-13.6$\,eV. Luego, siga los lineamientos de la clase para
+		encontrar que el valor de $a_0$ corresponde con el radio de Bohr.
 
+	\item {\bf{Números cuánticos}}:\\ 
+		Para un electrón en el nivel $n=5$, escriba todos los posibles
+		valores de los números cuánticos $l$ y $m$, el nombre del orbital, y el
+		número total de estados diferentes que el nivel $n=5$ puede tener
+		(recuerde que la multiplicidad es $(2l+1)$ para cada valor de $l$).
+		Luego, para el caso $l=4$, calcule los posibles valores de $L$ y $L_z$,
+		y los posibles ángulos que forma el vector $\vec L$ con el eje $z$.
+
+	\item {\bf{Soluciones}}:\\
+		Muestre que $T_2^0(\theta) = \frac{\sqrt{10}}{4} (3 \cos^2 \theta - 1)$
+		es solución de la ecuación cenital, y escriba la solución a la ecuación
+		radial correspondiente (sáquela de la tabla de soluciones encontrando
+		el valor de $n$ correspondiente). Luego, verifique que $R_1^0(\theta) =
+		\frac{2}{a_0^{3/2}} e^{-r/a_0}$ es una solución de la ecuación radial.
+
+	\item {\bf{Solución radial}}:\\
+		Utilizando la regla de normalización de la solución radial y la
+		expresión para calcular los polinomios de Laguerre vista en clase,
+		verifique que la solución correspondiente al nivel $R_3^1$ es $R_3
+		^1=\frac{4}{81 \sqrt{6} a_0^{3/2}} (r/a_0) (6 - r/a_0) \exp(-r/3 a_0)$.
+		Luego, a partir de las expresiones para los armónicos esféricos,
+		encuentre la función de onda del estado
+		$\psi_{3,1,+1}(r,\theta,\varphi)$. Compárela con la expresión vista en
+		clase (Tabla 11/29 U05C03).
+
+	\item {\bf{Probabilidades}}:\\
+		Para un electrón en un átomo de hidrógeno, la probabilidad de
+		encontrarlo en un cascarón esférico de radio interior $r$ y radio
+		exterior $r+dr$ (espesor $dr$) es $P(r)=r^2 |R_n^l|^2 dr$. Encuentre el
+		valor de $r$ para el cual la probabilidad de encontrar al electrón en
+		el estado $1s$ es máxima, y compare esta valor con la predicción del
+		modelo de Bohr para el nivel fundamental.
+
+	\item {\bf{Punto de viraje clásico}}:\\
+		Calcule para que valor de $r$, la energía total del nivel fundamental
+		del átomo de hidrógeno ($n=1$) es igual al valor de la energía
+		potencial $U(r) = e^2/(4 \pi \epsilon_0 r)$. A este valor, $r_c$ se lo
+		conoce como punto de viraje clásico, ya que en el análisis clásico el
+		electrón siempre estará confinado a $r\leq r_c$, cosa que no ocurre
+		para el análisis cuántico. Luego, calcule el valor $P(r_2)=r_c^2
+		|R_1^0(r_c)|^2$ de encontrar al electrón en un entorno de $r_c$,
+		verificando que es mayor que cero, y que por lo tanto hay una
+		probabilidad no nula de encontrar al electrón en $r>r_c$.
+	
+	\item {\bf{Cercanos y lejanos}}:\\
+		Para un electrón en el nivel $1s$, calcule el valor de
+		$\psi(r,\theta,\varphi)$ para $r=a_0$ y $r=a_0/2$. Luego, calcule la
+		probabilidad de que un electrón en ese estado se encuentre entre
+		$a_0/2$ y $a_0$, entre $a_0$ y $2 a_0$, y luego entre $5 a_0$ y $6
+		a_0$.
+
+	\item {\bf{Reglas de selección}}:\\
+		A partir de las reglas de selección para las transiciones entre dos
+		estados del átomo de hidrógeno, $\psi_{n' l' m_l'} \to \psi_{n l m_l}$:
+		$\Delta l \equiv l'-l = \pm 1$ y $\Delta m_l \equiv m_l' - m_l = 0, \pm
+		1$, encuentre cuales transiciones son permitidas y cuales son
+		prohibidas para una transición $4f \to 3d$, para una transición $3d
+		\to 2p$ y finalmente para la transición $4f \to 2p$. Verifique si es
+		más conveniente para el electrón (es decir, si hay más transiciones
+		permitidas) para la transición directa o para aquellas que pasan por el
+		nivel $3d$. 
 \end{enumerate}
 \end{document}
 %%%%
