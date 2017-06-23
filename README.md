@@ -1,12 +1,11 @@
-<img alt="" style="border-width:0" src="https://www.dropbox.com/s/4no2nlcmj78n742/banner-moderna.png?raw=1">
+/* <img alt="" style="border-width:0" src="clasehttps://www.dropbox.com/s/4no2nlcmj78n742/banner-moderna.png?raw=1"> */
+![Banner](materiales/banner-moderna.png)
 
 # Física Moderna A - Primer semestre de 2017
 
 **Asignatura del quinto semestre de la carrera de Profesorado en Física [Universidad Nacional de Río Negro](http://www.unrn.edu.ar/ "UNRN")**
 
-Más información en **[https://www.facebook.com/fisicareconocida/](https://www.facebook.com/fisicareconocida/ "Física ReConocida")**
-
-Las clases fueron realizados en [LibreOffice Impress](https://es.libreoffice.org/descubre/impress/), la herramienta de presentaciones de [LibreOffice](https://es.libreoffice.org/). Para poder visualizar correctamente las clases, por favor descarguelo siguiendo el este enlace: **[Descargue LibreOffice](https://es.libreoffice.org/descarga/libreoffice-estable/)**
+Las clases fueron realizados en [LibreOffice Impress](https://es.libreoffice.org/descubre/impress/), la herramienta de presentaciones de [LibreOffice](https://es.libreoffice.org/). Para poder visualizar correctamente las clases, por favor descarguelo siguiendo el este enlace: **[Descargue LibreOffice](https://es.libreoffice.org/descarga/libreoffice-estable/)**. En Windows, puede ser necesario descargar también la fuente [Cabin](https://www.fontsquirrel.com/fonts/download/cabin). Para facilitar la difusión, se incluyen también versiones de las clases en formato pdf. Para visualizarlo, podría necesitar descargar [Acrobat Reader](https://get.adobe.com/es/reader).
 
 # Contenidos mínimos
 
