@@ -1,4 +1,3 @@
-/* <img alt="" style="border-width:0" src="clasehttps://www.dropbox.com/s/4no2nlcmj78n742/banner-moderna.png?raw=1"> */
 ![Banner](materiales/banner-moderna.png)
 
 # Física Moderna A - Primer semestre de 2017
