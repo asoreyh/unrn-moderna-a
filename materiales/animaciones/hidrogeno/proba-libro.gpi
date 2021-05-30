@@ -1,0 +1,51 @@
+reset
+set grid
+set xlabel "r/a_0"
+set samples 1000
+
+#a0=0.05292
+
+a0=1.
+
+set ylabel "R_n^l(x)"
+set xrange[0:16]
+set yrange [-0.02:0.6]
+set xtics 1
+
+r10(x)=(2./a0**(3/2))*exp(-x/a0)
+r20(x)=(1./(2.*sqrt(2.)*a0**(3/2)))*(2.-x/a0)*exp(-x/(2*a0))
+r21(x)=(1./(2.*sqrt(6.)*a0**(3/2)))*(x/a0)*exp(-x/(2*a0))
+r30(x)=(2./(81.*sqrt(3.)*a0**(3/2)))*(27.-18*x/a0+2*(x/a0)**2)*exp(-x/(3*a0))
+r31(x)=(4./(81.*sqrt(6.)*a0**(3/2)))*(6-(x/a0))*(x/a0)*exp(-x/(3*a0))
+r32(x)=(4./(81.*sqrt(30.)*a0**(3/2)))*(x/a0)**2*exp(-x/(3*a0))
+
+set label 1 "(1s)" at 1.00,0.56 center
+# set label 2 "(2s)" at 0.78,0.075 center
+set label 3 "(2s)" at 5.37,0.21 center
+# set label 4 "(3s)" at 0.81,0.033 center
+# set label 5 "(3s)" at 4.06,0.063 center
+set label 6 "(3s)" at 13.10,0.125 center
+
+set term post enhanced 
+set out "1-2-3.ps"
+plot \
+	(x**2*r10(x)*r10(x)) w l dashtype 1 lw 4 t "1s", \
+	(x**2*r20(x)*r20(x)) w l dashtype 2 lw 4 t "2s", \
+	(x**2*r21(x)*r21(x)) w l dashtype 3 lw 2 t "2p", \
+	(x**2*r30(x)*r30(x)) w l dashtype 4 lw 4 t "3s", \
+	(x**2*r31(x)*r31(x)) w l dashtype 5 lw 2 t "3p", \
+	(x**2*r32(x)*r32(x)) w l linetype 6 lw 2 t "3d"
+set out
+set term qt
+
+set term post enhanced color
+set out "1-2-3-color.ps"
+plot \
+	(x**2*r10(x)*r10(x)) w l dashtype 1 lw 4 t "1s", \
+	(x**2*r20(x)*r20(x)) w l dashtype 2 lw 4 t "2s", \
+	(x**2*r21(x)*r21(x)) w l dashtype 3 lw 2 t "2p", \
+	(x**2*r30(x)*r30(x)) w l dashtype 4 lw 4 t "3s", \
+	(x**2*r31(x)*r31(x)) w l dashtype 5 lw 2 t "3p", \
+	(x**2*r32(x)*r32(x)) w l linetype 6 lw 2 t "3d"
+set out
+set term qt
