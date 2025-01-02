@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/83928349.svg)](https://doi.org/10.5281/zenodo.14589692)
+
 ![Banner](materiales/banner-moderna.png)
 
 # Física Moderna A - Primer semestre de 2017
