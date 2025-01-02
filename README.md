@@ -6,6 +6,14 @@
 
 Las clases fueron realizados en [LibreOffice Impress](https://es.libreoffice.org/descubre/impress/), la herramienta de presentaciones de [LibreOffice](https://es.libreoffice.org/). Para poder visualizar correctamente las clases, por favor descarguelo siguiendo el este enlace: **[Descargue LibreOffice](https://es.libreoffice.org/descarga/libreoffice-estable/)**. En Windows, puede ser necesario descargar también la fuente [Cabin](https://www.fontsquirrel.com/fonts/download/cabin). Para facilitar la difusión, se incluyen también versiones de las clases en formato pdf. Para visualizarlo, podría necesitar descargar [Acrobat Reader](https://get.adobe.com/es/reader).
 
+## Información importante
+
+Este commit correponde a la última edición del curso, correspondiente a la Cohorte 2017. Con este commit y release se da por cerrado el repositorio.
+
+![Banner](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/cc-zero.png)
+
+Todo este material ha sido liberado utilizando una licencia de dominio público creative commons [CC0-1.0-Universal](https://creativecommons.org/publicdomain/zero/1.0/). Por favor revise los [términos de la licencia](#licencia) antes de su uso.
+
 # Contenidos mínimos
 
 Los contenidos mínimos establecidos por el Plan de Estudios de la carrera para Física Moderna A son los siguientes: Radiación del cuerpo negro. Conflictos con la física clásica. La hipótesis de Planck. El efecto fotoeléctrico y los fotones. Dualidad onda-corpúsculo. Difracción de ondas y materia. Los espectros atómicos y la estructura del átomo. La función de onda. Principio de incerteza de Heisenberg. Mecánica cuántica del átomo de hidrógeno. Principio de exclusión. Átomos complejos. 
@@ -59,4 +67,4 @@ La tabla periódica. La ley de Moseley de los rayos X. El momento magnético orb
 
 #### (C) 2017 - Hernán Asorey ([@asoreyh](https://twitter.com/asoreyh/))
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este trabajo se distribuye en forma gratuita bajo la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a>.
+<br /><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/asoreyh/unrn-moderna-a">Física Moderna A (UNRN)</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/asoreyh/">Hernán Asorey</a> is marked with <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0 Universal<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1" alt=""></a>.</p>
